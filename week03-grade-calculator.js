@@ -34,6 +34,9 @@ function getGrade(score){
 }
 
 function average(scores){
+    if (scores.length === 0){
+        return 0;
+    }
     let total = 0;
     for (let i = 0; i < scores.length; i++){
         total += scores[i];
