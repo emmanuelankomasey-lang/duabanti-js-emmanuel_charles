@@ -1,9 +1,9 @@
-function cediToDollars(cediAmount){
+function cedisToDollars(cedis){
     const exchangeRate = 0.086
-    let dollarAmount = cediAmount * exchangeRate;
+    let dollarAmount = cedis * exchangeRate;
     return dollarAmount.toFixed(2);
     }
-console.log(`GHS ${1000}$ = USD ${cediToDollars(1000)}`);
+console.log(`GHS ${1000}$ = USD ${cedisToDollars(1000)}`);
 
 function kmToMiles(km){
     const rate = 0.621371;
