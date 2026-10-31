@@ -1,3 +1,6 @@
+const scores = [85, 92, 78, 88, 95];
+const amount = 4562;
+
 function calculateAverage(numbers) {
     if (numbers.length === 0) return 0;
     let total = 0;
@@ -11,7 +14,7 @@ function getGrade(score) {
     if (score >= 90) return "A";
     if (score >= 80) return "B";
     if (score >= 70) return "C";
-    if (score >= 60) return "D";
+    if (score >= 50) return "D";
     return "F";
 }
 
@@ -29,3 +32,7 @@ function calculateFinalGrade(scores) {
     const averageScore = calculateAverage(validScores);
     return getGrade(averageScore);
 }
+
+console.log(`Average Score: ${calculateAverage(scores)}`);
+console.log(`Final Grade: ${calculateFinalGrade(scores)}`);
+console.log(`Formatted Amount: ${formatCedis(amount)}`);
