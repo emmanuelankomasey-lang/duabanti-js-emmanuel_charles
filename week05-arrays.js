@@ -30,3 +30,9 @@ function getTopScorer(students) {
 function rank(students) {
     return students.slice().sort((a, b) => b.score - a.score);
 }
+
+console.log(
+    `Class summary: ${students.length} students, ${getPassing(students).length} passed, ` +
+    `total score ${getTotal(students)}. Top scorer: ${getTopScorer(students).name} ` +
+    `(${getTopScorer(students).score}).`
+);
