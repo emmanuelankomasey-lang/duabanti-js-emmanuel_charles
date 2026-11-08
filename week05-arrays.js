@@ -13,7 +13,7 @@ function getNames(students) {
     return students.map(student => student.name)
 }
 
-function getPassingStudents(students) {
+function getPassing(students) {
     return students.filter(student => student.score >= 50)
 }
 
@@ -28,6 +28,5 @@ function getTopScorer(students) {
 }
 
 function rank(students) {
-    return students.sort((a, b) => b.score - a.score)
-    .slice(0, count);
+    return students.slice().sort((a, b) => b.score - a.score);
 }
