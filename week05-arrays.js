@@ -1,0 +1,33 @@
+const students = [
+    {name: "Alice", score: 92},
+    {name: "Bob", score: 85},
+    {name: "Charlie", score: 78},
+    {name: "David", score: 41},
+    {name: "Eve", score: 31},
+    {name: "Frank", score: 53},
+    {name: "Grace", score: 25},
+    {name: "Hannah", score: 34},
+]
+
+function getNames(students) {
+    return students.map(student => student.name)
+}
+
+function getPassingStudents(students) {
+    return students.filter(student => student.score >= 50)
+}
+
+function getTotal(students) {
+    return students.reduce((total, student) => total + student.score, 0)
+}
+
+function getTopScorer(students) {
+    return students.reduce((topScorer, student) => {
+        return (student.score > topScorer.score) ? student : topScorer;
+    }, {name: "", score: -Infinity});
+}
+
+function rank(students) {
+    return students.sort((a, b) => b.score - a.score)
+    .slice(0, count);
+}
