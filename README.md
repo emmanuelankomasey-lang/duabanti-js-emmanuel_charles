@@ -80,3 +80,21 @@ You do **not** need `module.exports`. Just write the functions normally.
 This repo's `package.json` says `"type": "commonjs"`. Leave it until Week 10,
 when the lessons ask you to change it to `"module"` yourself. Do not run
 `npm init` in this repo — it already has a `package.json`.
+
+## How the expense tracker works
+
+For this week I applied all that was taught from week01 till now. 
+
+The expense tracker was created with an array of four listed expense groups. Basically, the function off this code is to aid an individual track their expenses and also monitor what they spend on the most.
+
+In this, we have five simple functions. 
+
+For the first function, a user with some additional lines of code can add a new expense in accordance with the already stated expense structure.
+
+THe code then takes all the expenses that the user has entered into the tracker and sums them up returning the amount in GHs. 
+
+ALso, expenses are basically arranged by the category that it is in enabling the user to basically define where most of their resources are used for. 
+
+It's almost the same as the filtering with a major difference being the output delivered to the user when called.
+
+Also if the user has, say different dates for the said expenses, the user can track the average they spend say monthly with the function to get the average expense. 
