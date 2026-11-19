@@ -43,3 +43,5 @@ function average(scores){
     }
     return total / scores.length;
 }
+
+module.exports = { average, getGrade, isValidScore };
